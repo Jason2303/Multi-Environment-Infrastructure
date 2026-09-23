@@ -1,0 +1,8 @@
+version: 0.1
+projects:
+  - path: environments/dev
+    name: dev
+  - path: environments/staging
+    name: staging
+  - path: environments/prod
+    name: prod
