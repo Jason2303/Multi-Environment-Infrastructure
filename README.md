@@ -210,6 +210,17 @@ Collects logs from the application tier using CloudWatch, monitors CPU utilizati
 
 Repeat for `staging` and `prod` environments.
 
+## Plan Output
+
+# Dev Output
+![Dev Plan](images/dev.png)
+
+# Production Output
+![Dev Plan](images/prod.png)
+
+# Staging Output
+![Dev Plan](images/staging.png)
+
 ### Remote State Backend
 
 The S3 backend configuration is commented out in each environment's `backend.tf`. To enable it:
