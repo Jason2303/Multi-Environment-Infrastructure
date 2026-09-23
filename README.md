@@ -41,37 +41,37 @@ Terraform project that provisions identical infrastructure across three environm
 ```
 terraform-multi-env/
 ├── modules/
-│   ├── networking/         # VPC, subnets, IGW, NAT, route tables
+│   ├── networking/         
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   ├── compute/            # Security group, launch template, ASG
+│   ├── compute/            
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   ├── database/           # RDS instance, DB subnet group, security group
+│   ├── database/           
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   └── monitoring/         # CloudWatch log group, CPU alarm, SNS topic
+│   └── monitoring/         
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
 ├── environments/
 │   ├── dev/
-│   │   ├── main.tf         # Calls all four modules
+│   │   ├── main.tf         
 │   │   ├── variables.tf
 │   │   ├── outputs.tf
 │   │   ├── terraform.tfvars
-│   │   └── backend.tf      # S3 backend (commented out)
-│   ├── staging/            # Same structure as dev
-│   └── prod/               # Same structure as dev
-├── backend/                # S3 bucket for remote state
+│   │   └── backend.tf      
+│   ├── staging/            
+│   └── prod/               
+├── backend/                
 │   ├── main.tf
 │   └── variables.tf
 ├── .github/
 │   └── workflows/
-│       └── terraform.yml   # CI/CD pipeline
+│       └── terraform.yml   
 ├── infracost.yml
 └── README.md
 ```
