@@ -212,13 +212,13 @@ Repeat for `staging` and `prod` environments.
 
 ## Plan Output
 
-### Dev Output
+### Dev Plan Output
 ![Dev Plan](images/dev.png)
 
-### Production Output
+### Production Plan Output
 ![Dev Plan](images/prod.png)
 
-### Staging Output
+### Staging Plan Output
 ![Dev Plan](images/staging.png)
 
 ### Remote State Backend
